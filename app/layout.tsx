@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import '../styles/globals.css';
+import Nav from '@components/Nav';
 
 // needed for SEO optimization
 export const metadata = {
@@ -16,7 +17,12 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
           <div className="gradient" />
         </div>
 
-        <main className="app">{children}</main>
+        
+
+        <main className="app">
+          <Nav />
+          {children}
+          </main>
       </body>
     </html>
   )
